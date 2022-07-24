@@ -1,0 +1,16 @@
+{
+  "name": "persian-dummy-data",
+  "version": "1.0.0",
+  "description": "Your Figma Plugin",
+  "main": "code.js",
+  "scripts": {
+    "build": "node esbuild.js"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.49.0",
+    "esbuild": "^0.14.49",
+    "typescript": "*"
+  }
+}

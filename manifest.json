@@ -1,0 +1,9 @@
+{
+  "name": "Persian Dummy Data",
+  "id": "1133038552381955418",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "editorType": [
+    "figma"
+  ]
+}
