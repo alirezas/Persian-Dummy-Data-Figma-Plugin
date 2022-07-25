@@ -1,13 +1,21 @@
 {
   "name": "persian-dummy-data",
   "version": "1.0.0",
-  "description": "Your Figma Plugin",
+  "description": "Persian/Farsi realistic placeholder generator.",
   "main": "code.js",
   "scripts": {
     "build": "node esbuild.js"
   },
-  "author": "",
-  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alirezas/Persian-Dummy-Data-Figma-Plugin.git"
+  },
+  "author": {
+    "name": "Alireza Sarabchi",
+    "url": "https://alireza.ws",
+    "email": "a.sarabchi@gmail.com"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@figma/plugin-typings": "^1.49.0",
     "esbuild": "^0.14.49",

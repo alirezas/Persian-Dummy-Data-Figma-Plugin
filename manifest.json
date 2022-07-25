@@ -1,9 +1,28 @@
 {
-  "name": "Persian Dummy Data",
-  "id": "1133038552381955418",
-  "api": "1.0.0",
-  "main": "dist/code.js",
-  "editorType": [
-    "figma"
-  ]
+    "name": "Persian Dummy Data",
+    "id": "1133038552381955418",
+    "api": "1.0.0",
+    "main": "dist/code.js",
+    "menu": [
+        {
+            "name": "Names",
+            "menu": [
+                {
+                    "name": "Full name",
+                    "command": "fullname"
+                },
+                {
+                    "name": "First name",
+                    "command": "firstname"
+                },
+                {
+                    "name": "Last name",
+                    "command": "lastname"
+                }
+            ]
+        }
+    ],
+    "editorType": [
+        "figma"
+    ]
 }
