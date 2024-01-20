@@ -1,13 +1,13 @@
-const esbuild = require('esbuild')
+const esbuild = require("esbuild");
 
 // sandbox
 
 esbuild
   .build({
-    entryPoints: ['src/code.ts'],
+    entryPoints: ["src/code.ts"],
     bundle: true,
-    platform: 'node',
-    target: ['node10.4'],
-    outfile: 'dist/code.js'
+    platform: "node",
+    target: ["node18"],
+    outfile: "dist/code.js",
   })
-  .catch(() => process.exit(1))
+  .catch(() => process.exit(1));

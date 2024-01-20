@@ -1,28 +1,45 @@
 {
-    "name": "Persian Dummy Data",
-    "id": "1133038552381955418",
-    "api": "1.0.0",
-    "main": "dist/code.js",
-    "menu": [
+  "name": "Persian Dummy Data",
+  "id": "1133038552381955418",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "networkAccess": { "allowedDomains": ["none"] },
+  "menu": [
+    {
+      "name": "Names",
+      "menu": [
         {
-            "name": "Names",
-            "menu": [
-                {
-                    "name": "Full name",
-                    "command": "fullname"
-                },
-                {
-                    "name": "First name",
-                    "command": "firstname"
-                },
-                {
-                    "name": "Last name",
-                    "command": "lastname"
-                }
-            ]
+          "name": "Full name",
+          "command": "fullname"
+        },
+        {
+          "name": "First name",
+          "command": "firstname"
+        },
+        {
+          "name": "Last name",
+          "command": "lastname"
         }
-    ],
-    "editorType": [
-        "figma"
-    ]
+      ]
+    },
+    {
+      "name": "Numbers",
+      "menu": [
+        {
+          "name": "Cellphone",
+          "command": "cellphone"
+        }
+      ]
+    },
+    {
+      "name": "Misc",
+      "menu": [
+        {
+          "name": "Status",
+          "command": "status"
+        }
+      ]
+    }
+  ],
+  "editorType": ["figma"]
 }

@@ -1,6 +1,6 @@
 {
   "name": "persian-dummy-data",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Persian/Farsi realistic placeholder generator.",
   "main": "code.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "@figma/plugin-typings": "^1.49.0",
-    "esbuild": "^0.14.49",
+    "esbuild": "^0.19.11",
     "typescript": "*"
   }
 }
