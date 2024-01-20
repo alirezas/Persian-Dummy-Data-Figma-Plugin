@@ -23,11 +23,15 @@
       ]
     },
     {
-      "name": "Numbers",
+      "name": "Contact Info",
       "menu": [
         {
           "name": "Cellphone",
           "command": "cellphone"
+        },
+        {
+          "name": "Email",
+          "command": "email"
         }
       ]
     },

@@ -1,16 +1,46 @@
 import names from "./data/names";
 import lastNames from "./data/lastNames";
 import statuses from "./data/statuses";
+import dailingCodes from "./data/dailing-codes";
 
 const getRandom = (list: Array<String>) => {
   return list[Math.floor(Math.random() * list.length)];
 };
 
+const generateRandomString = (length: number) => {
+  const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
+  let result = "";
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    result += characters.charAt(randomIndex);
+  }
+  return result;
+};
+
 const generateDummyMobileNumber = () => {
-  const randomNumber = Math.floor(Math.random() * 10000000000);
-  const formattedNumber = `09${String(randomNumber).padStart(8, "0")}`;
+  const randomNumber = Math.floor(Math.random() * 10000000);
+  const dailingCode = getRandom(dailingCodes);
+  const formattedNumber = `${dailingCode}${String(randomNumber).padStart(
+    7,
+    "0"
+  )}`;
+
   return formattedNumber;
 };
+
+function generateDummyEmail() {
+  const emailProviders = [
+    "gmail.com",
+    "yahoo.com",
+    "hotmail.com",
+    "example.com",
+  ];
+  const username = generateRandomString(8);
+  const randomProvider = getRandom(emailProviders);
+  const dummyEmail = `${username}@${randomProvider}`;
+
+  return dummyEmail;
+}
 
 const loadFonts = async (node) => {
   await Promise.all(
@@ -23,7 +53,7 @@ const loadFonts = async (node) => {
 const doMagic = async (node) => {
   await loadFonts(node);
 
-  let firstName, lastName, result, status, cellphone;
+  let firstName, lastName, result, status, cellphone, email;
 
   switch (figma.command) {
     case "fullname":
@@ -46,6 +76,10 @@ const doMagic = async (node) => {
     case "cellphone":
       cellphone = generateDummyMobileNumber();
       result = cellphone;
+      break;
+    case "email":
+      email = generateDummyEmail();
+      result = email;
       break;
   }
 
