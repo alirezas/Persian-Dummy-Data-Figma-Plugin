@@ -1,4 +1,4 @@
-let statuses: Array<String> = [
+const statuses: Array<string> = [
   "فعال",
   "غیرفعال",
   "در حال انجام",

@@ -1,4 +1,4 @@
-let dailingCodes: Array<String> = [
+const dailingCodes: Array<string> = [
   "0930",
   "0933",
   "0935",

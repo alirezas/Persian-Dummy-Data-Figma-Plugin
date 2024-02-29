@@ -1,4 +1,4 @@
-let names: Array<String> = [
+const names: Array<string> = [
     "ریما",
     "فرزانه",
     "فرشته",
