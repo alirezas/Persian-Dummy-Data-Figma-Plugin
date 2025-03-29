@@ -1,40 +1,78 @@
-Below are the steps to get your plugin running. You can also find instructions at:
+# Persian Dummy Data for Figma
 
-  https://www.figma.com/plugin-docs/setup/
+A Figma plugin that generates realistic Persian/Farsi placeholder data for your designs. Easily populate your mockups with culturally relevant Persian names, contact information, and more.
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+![Figma Plugin](https://img.shields.io/badge/Figma-Plugin-orange)
+![Version](https://img.shields.io/github/package-json/v/alirezas/Persian-Dummy-Data-Figma-Plugin)
+![License](https://img.shields.io/github/license/alirezas/Persian-Dummy-Data-Figma-Plugin)
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
+## Features
 
-  https://nodejs.org/en/download/
+- **Names**: Generate full names, first names, or last names in Persian
+- **Contact Information**: Create realistic mobile numbers and email addresses
+- **Status Messages**: Add authentic status messages to your designs
+- **One-Click Application**: Apply to multiple text layers at once
+- **Offline Usage**: Works without internet connection
 
-Next, install TypeScript using the command:
+## Installation
 
-  npm install -g typescript
+1. Open Figma and navigate to the Community tab
+2. Search for "Persian Dummy Data"
+3. Click "Install"
 
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
+Alternatively, you can install directly from this link: [Persian Dummy Data on Figma Community](https://www.figma.com/community/plugin/1133038552381955418)
 
-  npm install --save-dev @figma/plugin-typings
+## Usage
 
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
+1. Select one or more text layers in your Figma design
+2. Right-click and navigate to Plugins > Persian Dummy Data
+3. Choose the type of data you want to generate:
+   - **Names**: Full name, First name, Last name
+   - **Contact Info**: Cellphone, Email
+   - **Misc**: Status
 
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
+The plugin will automatically apply the generated data to all selected text layers.
 
-For more information, visit https://www.typescriptlang.org/
+## Development Setup
 
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
+This plugin is built with TypeScript. To set up the development environment:
 
-We recommend writing TypeScript code using Visual Studio code:
+1. Clone this repository
 
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "tsc: watch - tsconfig.json". You will have to do this again every time
-    you reopen Visual Studio Code.
+   ```
+   git clone https://github.com/alirezas/Persian-Dummy-Data-Figma-Plugin.git
+   cd Persian-Dummy-Data-Figma-Plugin
+   ```
 
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+2. Install dependencies
+
+   ```
+   npm install
+   ```
+
+   or
+
+   ```
+   pnpm install
+   ```
+
+3. Build the plugin
+
+   ```
+   npm run build
+   ```
+
+4. In Figma desktop app, go to Plugins > Development > Import plugin from manifest...
+5. Select the `manifest.json` file from this project
+
+## Contributing
+
+Contributions are welcome! Feel free to submit a pull request or open an issue if you have any ideas or bug reports.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+
+Created by [Alireza Sarabchi](https://alireza.ws)
