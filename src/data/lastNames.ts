@@ -1,4 +1,4 @@
-let lastNames: Array<String> = [
+const lastNames: Array<string> = [
     "رضایی",
     "اختر",
     "حبیبی",

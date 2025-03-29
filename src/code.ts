@@ -3,7 +3,7 @@ import lastNames from "./data/lastNames";
 import statuses from "./data/statuses";
 import dailingCodes from "./data/dailing-codes";
 
-const getRandom = (list: Array<String>) => {
+const getRandom = (list: Array<string>) => {
   return list[Math.floor(Math.random() * list.length)];
 };
 
